@@ -57,4 +57,7 @@ Iamnii::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
 
 root :to =>'splash#show'
+
+match "homepage", :to => 'homepage#show', :as => :home_page
+
 end

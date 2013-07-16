@@ -3,14 +3,17 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
+  <%= stylesheet_link_tag 'splash' %>
   <title>Nii's Website</title>
 </head>
 
 <body>
-    <div class="splash-content">
-        <div class="centered-content animation-div">
-            <h1 class='splash-title'>Welcome to Nii's Website</h1>
-            <div><a class="button rotating" href="#" type="button">Enter Here!</a></div>
+    <div class='splash'>
+        <div class="splash-content">
+            <div class="centered-content animation-div">
+                <h1 class='splash-title'>Welcome to Nii's Website</h1>
+                <div><%= link_to("Enter Here!", home_page_url ,{:class => 'button rotating', :type => 'button'}) %></div>
+            </div>
         </div>
     </div>
 </body>
