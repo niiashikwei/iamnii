@@ -17,7 +17,7 @@ test:
   socket: /tmp/mysql.sock
 
 production:
-  adapter: mysql2
+  adapter: postgresql
   database: iamnii_prod
   encoding: utf8
   username: root
