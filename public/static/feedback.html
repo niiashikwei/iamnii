@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <title></title>
+    <meta name="Generator" content="Cocoa HTML Writer">
+    <meta name="CocoaVersion" content="1187.39">
+    <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css"/>
+    <script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
+    <style>
+        .ui-tabs-vertical { width: 55em; }
+        .ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; float: left; width: 12em; }
+        .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; }
+        .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+        .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+        .ui-tabs-vertical .ui-tabs-panel { padding: 1em; float: right; width: 40em;}
+
+        #red, #green, #blue, #progress {
+            float: left;
+            clear: left;
+            width: 300px;
+            margin: 15px;
+        }
+        .swatch {;
+            background-image: none;
+            width:84%;
+        }
+        #red .ui-slider-range { background: #ef2929; }
+        #red .ui-slider-handle { border-color: #ef2929; }
+        #green .ui-slider-range { background: #8ae234; }
+        #green .ui-slider-handle { border-color: #8ae234; }
+        #blue .ui-slider-range { background: #729fcf; }
+        #progress .ui-slider-handl { background: #729fcf; }
+        #progress .ui-slider-handle { border-color: #729fcf; }
+    </style>
+    <script>
+        $(function () {
+            $( "#tabs" ).tabs({
+                event: "mouseover",
+                collapsible: true
+            });
+            collapsible: true;
+            $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+            $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+        });
+
+
+
+        function hexFromRGB(r, g, b) {
+            var hex = [
+                r.toString( 16 ),
+                g.toString( 16 ),
+                b.toString( 16 )
+            ];
+            $.each( hex, function( nr, val ) {
+                if ( val.length === 1 ) {
+                    hex[ nr ] = "0" + val;
+                }
+            });
+            return hex.join( "" ).toUpperCase();
+        }
+        function refreshSwatch() {
+            var red = $( "#red" ).slider( "value" ),
+                green = $( "#green" ).slider( "value" ),
+                blue = $( "#blue" ).slider( "value" ),
+                progress = $( "#progress" ).slider( "value" ),
+                hex = hexFromRGB( red, green, blue );
+            $( ".swatch" ).css( "background-color", "#" + hex );
+        }
+        $(function() {
+            $( "#red, #green, #blue, #progress" ).slider({
+                orientation: "horizontal",
+                range: "min",
+                max: 255,
+                value: 127,
+                slide: refreshSwatch,
+                change: refreshSwatch
+            });
+            $( "#red" ).slider( "value", 255 );
+            $( "#green" ).slider( "value", 140 );
+            $( "#blue" ).slider( "value", 60 );
+            $("#progress").slider("value", 1);
+
+        });
+    </script>
+</head>
+<body>
+<p class="p1">
+
+<h1 align="center"> Feedback Central </h1></p>
+
+<div class="main-content">
+    <div id="tabs">
+        <ul>
+            <li><a class="swatch" href="#tabs-1">Technical</a></li>
+            <li><a class="swatch" href="#tabs-2">Consulting</a></li>
+            <li><a class="swatch" href="#tabs-3">Organizational</a></li>
+            <li><a class="swatch" href="#tabs-4">Social</a></li>
+            <li><a class="swatch" href="#tabs-5">General</a></li>
+        </ul>
+
+        <div id="tabs-1">
+            <p1><h2>Technical</h2></p1>
+
+        </div>
+
+        <div id="tabs-2">
+            <p1><h2>Consulting</h2></p1>
+        </div>
+
+        <div id="tabs-3">
+            <p1><h2>Organizational</h2></p1>
+        </div>
+
+        <div id="tabs-4">
+            <p1><h2>Social</h2></p1>
+        </div>
+
+        <div id="tabs-5">
+            <p1><h2>General</h2></p1>
+        </div>
+
+    </div>
+
+
+    <div id="red"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
+    <div id="progress"></div>
+
+</div>
+
+</body>
+</html>

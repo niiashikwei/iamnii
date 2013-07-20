@@ -61,10 +61,11 @@ body{
 .animation-div
 {
   position:relative;
-  animation: clockwise-rectangle-rotation 5s;
-  -moz-keyframes: clockwise-rectangle-rotation 5s;
-  -o-keyframes: clockwise-rectangle-rotation 5s;
-  -webkit-animation: clockwise-rectangle-rotation 5s;
+  animation: clockwise-rectangle-rotation 5s ease 2s 10;
+  -moz-keyframes: clockwise-rectangle-rotation 5s ease 2s 10;
+  -o-keyframes: clockwise-rectangle-rotation 5s ease 2s 10;
+  -webkit-animation: clockwise-rectangle-rotation 5s ease 2s 10;
+  -ms-animation: clockwise-rectangle-rotation 5s ease 2s 10;
 }
 
 
