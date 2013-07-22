@@ -12,24 +12,6 @@
 
   <%= stylesheet_link_tag 'homepage' %>
   <%= javascript_include_tag 'homepage' %>
-  <script>
-      $(function () {
-
-          $("#trigger1").bind('click', function () {
-              $("#slide-panel").toggle('slide');
-              $("#trigger1").hide();
-              console.log('showing');
-          });
-
-          $("#trigger2").bind('click', function () {
-              $("#slide-panel").toggle('slide');
-              console.log('hiding');
-              $("#trigger1").show();
-          });
-
-      });
-
-  </script>
 
   <title>Nii's Website</title>
 </head>
