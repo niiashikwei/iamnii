@@ -1,10 +1,19 @@
 <%= stylesheet_link_tag 'splash' %>
 
-<div class='splash-page'>
-  <div class="splash-content">
-    <div class="centered-content animation-div">
-      <h1 class='splash-title'>Welcome to Nii's Website</h1>
-      <div><%= link_to("Enter Here!", home_page_url, {:class => 'button rotating', :type => 'button'}) %></div>
+<div id='splash-page' class='page' data-role='page'>
+
+    <div class='header' data-role='header'>
+      <h3>Welcome to Nii's Website</h3>
     </div>
-  </div>
+
+    <div class='content' data-role='content'>
+      <div class="centered-content animation">
+        <div><%= link_to("Enter Here!", home_page_url, {:class => 'button rotating', :type => 'button'}) %></div>
+      </div>
+    </div>
+
+    <div class='footer' data-role='footer' data-position='fixed'>
+      <h3>"Saru Mo Ki Kara Oschiru"</h3>
+    </div>
+
 </div>

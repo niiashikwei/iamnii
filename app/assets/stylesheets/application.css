@@ -9,3 +9,42 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  */
+
+body {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,h2,h3,h4,h5
+{
+    text-align:center;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+}
+
+.page{
+    background-color: #adadad;
+}
+
+.header{
+    background-color: black;
+    color: white;
+    padding: 1.5%;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 1.5%;
+}
+
+.content{
+    background-image:url('beach_guitar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: white;
+    padding: 10px;
+    height:77%;
+    width:100%;
+}

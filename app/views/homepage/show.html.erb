@@ -1,18 +1,25 @@
-<%= stylesheet_link_tag 'http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css' %>
-<%= javascript_include_tag 'http://code.jquery.com/jquery-1.9.1.js' %>
-<%= javascript_include_tag 'http://code.jquery.com/ui/1.10.3/jquery-ui.js' %>
 <%= stylesheet_link_tag 'homepage' %>
 <%= javascript_include_tag 'homepage' %>
 
-<div id="home-page">
-  <div id="slide-panel" class="ui-widget-content ui-corner-all">
-    <h1 align='center'>This is the slide panel</h1>
-    <a id="trigger2" href="#"><h4 align='center'>click here to HIDE slide panel</h4></a>
+<div id="home-page" class='page' data-role='page'>
+  <div data-role='header' style="height:50px; width:100%; background-color: gray; padding:0px;margin:0px;">
+    <h3 style='align:middle'>Nii's Website</h3>
   </div>
 
-  <div>
-    <h1 align='center'>Homepage is in the works...</h1>
-    <a id="trigger1" href="#"><h4 align='center'>click here to SHOW slide panel</h4></a>
+  <div data-role='content'>
+      <div id="slide-panel" class="ui-widget-content ui-corner-all">
+        <h1 align='center'>This is the slide panel</h1>
+        <a id="trigger2" href="#"><h4 align='center'>click here to HIDE slide panel</h4></a>
+      </div>
+
+      <div>
+        <h1 align='center'>Homepage is in the works...</h1>
+        <a id="trigger1" href="#"><h4 align='center'>click here to SHOW slide panel</h4></a>
+      </div>
+  </div>
+
+  <div data-role='footer' data-position="fixed" style="height:50px; width:100%; background-color: gray; padding:0px;margin:0px;">
+    <h3 style='align:middle'>Footer</h3>
   </div>
 </div>
 

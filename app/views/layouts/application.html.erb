@@ -2,12 +2,25 @@
 <html>
 <head>
   <title>Iamnii</title>
-  <%= javascript_include_tag "application" %>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1">
+  <%= stylesheet_link_tag 'http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css' %>
+  <%= stylesheet_link_tag 'application' %>
+
+  <%= javascript_include_tag 'http://code.jquery.com/jquery-1.9.1.js' %>
+  <%= javascript_include_tag 'http://code.jquery.com/ui/1.10.3/jquery-ui.js' %>
+  <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
 <%= yield %>
+
+<script>
+    $('.page').css('height',$(window).height());
+    $(window).resize(function() {
+        $('.page').css('height',$(window).height());
+    });
+</script>
 
 </body>
 </html>
