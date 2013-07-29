@@ -1,15 +1,12 @@
 
-#home-page{
-    height:100%; width:100%;
-}
-
 #slide-panel{
     display:none;
     height:100%;
     width:40%;
-    box-shadow: 10px 10px 5px #888888;
+    background-color: gray;
+    box-shadow: 5px 5px 2px #272727;
     border:1px solid black;
-    padding:10px;
+    padding:5px;
     position:absolute;
     left:0px;
     top:0px;

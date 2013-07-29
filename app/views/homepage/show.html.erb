@@ -1,14 +1,18 @@
 <%= stylesheet_link_tag 'homepage' %>
 <%= javascript_include_tag 'homepage' %>
 
-<div id="home-page" class='page' data-role='page'>
-  <div data-role='header' style="height:50px; width:100%; background-color: gray; padding:0px;margin:0px;">
-    <h3 style='align:middle'>Nii's Website</h3>
+<div id="home-page" class='page' data-role='page' data-position='fixed'>
+  <div class='header' data-role='header'>
+    <h3>Welcome to Nii's Website</h3>
   </div>
 
-  <div data-role='content'>
+  <div class='content home-content' data-role='content'>
       <div id="slide-panel" class="ui-widget-content ui-corner-all">
-        <h1 align='center'>This is the slide panel</h1>
+        <div class='header' data-role='header'>
+          <h3>Header</h3>
+        </div>
+
+        <h5 align='center'>Slide panel content goes here</h5>
         <a id="trigger2" href="#"><h4 align='center'>click here to HIDE slide panel</h4></a>
       </div>
 
@@ -18,16 +22,9 @@
       </div>
   </div>
 
-  <div data-role='footer' data-position="fixed" style="height:50px; width:100%; background-color: gray; padding:0px;margin:0px;">
-    <h3 style='align:middle'>Footer</h3>
+  <div class='footer' data-role='footer' data-position='fixed'>
+    <h3>"Anyone can be cynical, dare to be an optimist!"</h3>
   </div>
 </div>
 
-<script>
-    window.addEventListener("load", function () {
-        setTimeout(function () {
-            window.scrollTo(0, 1);
-        }, 0);
-    });
-</script>
 

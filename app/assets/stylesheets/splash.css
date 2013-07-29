@@ -1,4 +1,8 @@
 
+.splash-content{
+    background-image:url('beach_guitar.jpg');
+}
+
 .centered-content {
     text-align: center;
     margin-left: 45%;

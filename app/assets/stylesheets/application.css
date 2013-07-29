@@ -40,11 +40,9 @@ h1,h2,h3,h4,h5
 }
 
 .content{
-    background-image:url('beach_guitar.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-color: white;
     padding: 10px;
     height:77%;
-    width:100%;
 }
