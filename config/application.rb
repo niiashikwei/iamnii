@@ -9,6 +9,10 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
+if Rails.env == "production"
+    config.middleware.use("Rack::GoogleAnalytics", :web_property_id => "UA-43250044-1")
+end
+
 module Iamnii
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
