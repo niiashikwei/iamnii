@@ -58,6 +58,8 @@ Iamnii::Application.routes.draw do
 
 root :to =>'splash#show'
 
-match "homepage", :to => 'homepage#show', :as => :home_page
+match 'homepage', :to => 'homepage#show', :as => :home_page
+
+match 'rq/sample_customer', :to => 'rq#sample_customer'
 
 end

@@ -1,0 +1,2 @@
+module RqHelper
+end
