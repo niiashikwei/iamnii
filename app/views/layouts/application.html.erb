@@ -9,25 +9,18 @@
   <meta name="googlebot" content="noodp">
   <meta name="description" content="This is Nii Ashikwei Tetteh's Website. "<%= @page_description_extra %>">
 
-  <%= stylesheet_link_tag 'http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css' %>
+  <%= stylesheet_link_tag 'css_reset' %>
   <%= stylesheet_link_tag 'application' %>
-
-  <%= javascript_include_tag 'http://code.jquery.com/jquery-1.9.1.js' %>
-  <%= javascript_include_tag 'http://code.jquery.com/ui/1.10.3/jquery-ui.js' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+  <div class='header' >
+    <h3>IAMNII</h3>
+  </div>
 
-<script>
-    $('.page').css('height',$(window).height());
-    $(window).resize(function() {
-        $('.page').css('height',$(window).height());
-    });
-    $('.content').css();
-</script>
+<%= yield %>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
