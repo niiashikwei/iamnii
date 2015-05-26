@@ -16,14 +16,7 @@ html, body{
 .header{
     background-color: black;
     color: white;
-    padding: 1.5%;
+    padding: 1%;
     text-align: center;
-}
-
-.logo{
-    float: left;
-    width: 25%;
-    border-right: white 1px solid;
-    text-align: center;
-    height: 100%;
+    font-size: 1.5em;
 }
