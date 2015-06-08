@@ -22,6 +22,8 @@ html, body{
 
 .site-title{
     float:left;
+    padding-top: 5px;
+    padding-left: 20px;
 }
 
 .blog-link{
@@ -29,7 +31,6 @@ html, body{
 }
 
 .blog-link a {
-    border-left: solid white 1px;
     padding-left: 10px;
     color: white;
     font-size: 0.8em;
