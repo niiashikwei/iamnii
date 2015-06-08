@@ -20,7 +20,7 @@ task :np do
     end
 
     begin
-      config = {'editor' => 'mate'}
+      config = {'editor' => 'sublime'}
       if File.exist?("#{home_dir}/.bloggyrc")
         config.merge!(YAML.load_file("#{home_dir}/.bloggyrc"))
       end
