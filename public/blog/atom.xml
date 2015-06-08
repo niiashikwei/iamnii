@@ -4,7 +4,7 @@
  <title>BLOG_NAME</title>
  <link href="YOUR_URL/atom.xml" rel="self"/>
  <link href="YOUR_URL"/>
- <updated>2015-06-08T15:32:29+00:00</updated>
+ <updated>2015-06-08T16:15:35+00:00</updated>
  <id>BLOG_URL</id>
  <author>
    <name>BLOG_NAME</name>
@@ -12,15 +12,14 @@
 
  
  <entry>
-   <title>Welcome to Bloggy</title>
-   <link href="YOUR_URL/a-test-post.html"/>
-   <updated>2014-01-11T00:00:00+00:00</updated>
-   <id>BLOG_URL/a-test-post</id>
-   <content type="html">&lt;p&gt;Bloggy was born when &lt;a href=&quot;http://zbruhnke.com&quot;&gt;Zach&lt;/a&gt; was bored while his girlfriend and her sister were talking and watching the voice.&lt;/p&gt;
+   <title>welcome_to_the_philosophical_poet</title>
+   <link href="YOUR_URL/welcome-to-the-philosophical-poet.html"/>
+   <updated>2015-06-08T00:00:00+00:00</updated>
+   <id>BLOG_URL/welcome-to-the-philosophical-poet</id>
+   <content type="html">&lt;h1&gt;Welcome to 'the philosophical poet'&lt;/h1&gt;
 
-&lt;p&gt;So this gem was created to generate a blog inside my rails application for a blog post I wrote while working at &lt;a href=&quot;http://engineyard.com&quot;&gt;Engine Yard&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Gem Updated 1/11/2014 with improvements for newer version of Jekyll and rake generate fix&lt;/p&gt;
+&lt;p&gt;Hi Everyone, this blog is an outlet for me to share some of the random thoughts and insights I gain whenever they hit me.
+Thanks for visiting and feel free to share links to any pieces that you find interesting.&lt;/p&gt;
 </content>
  </entry>
  
