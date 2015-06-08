@@ -17,6 +17,20 @@ html, body{
     background-color: black;
     color: white;
     padding: 1%;
-    text-align: center;
     font-size: 1.5em;
+}
+
+.site-title{
+    float:left;
+}
+
+.blog-link{
+    text-align: right;
+}
+
+.blog-link a {
+    border-left: solid white 1px;
+    padding-left: 10px;
+    color: white;
+    font-size: 0.8em;
 }
