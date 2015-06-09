@@ -8,6 +8,7 @@
   <meta name="googlebot" content="code">
   <meta name="googlebot" content="noodp">
   <meta name="description" content="This is Nii Ashikwei Tetteh's Website. "<%= @page_description_extra %>">
+  <meta name="author" content="Nii Ashikwei Tetteh" />
 
   <%= stylesheet_link_tag 'css_reset' %>
   <%= stylesheet_link_tag 'application' %>
@@ -17,9 +18,11 @@
 <body>
 
   <div class='header' >
-    <div class="site-title"><h3>IAMNII</h3></div>
+    <!--<div class="site-title"><h3><a href="/" style="color: white">IAMNII</a></h3></div>-->
+    <div class="site-title"><%=link_to image_tag('i am nii 2.jpg', :alt => 'IAMNII', :height => 35, :width => 70, :crop => :fill), '/' %></div>
     <div class="blog-link">
       <iframe allowtransparency="true" scrolling="no" frameborder="no" src="https://w.soundcloud.com/icon/?url=http%3A%2F%2Fsoundcloud.com%2Fnii-ashikwei-tetteh&color=orange_white&size=32" style="width: 32px; height: 32px; vertical-align: middle;">dsd</iframe>
+      <a href="/apps">apps</a>
       <a href="/blog">blog</a>
     </div>
   </div>

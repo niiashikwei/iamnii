@@ -8,28 +8,4 @@
     width: 100%;
 }
 
-.content{
-    height: 45%;
-}
-
-.section-header{
-    font-size: 1.5em;
-    padding-bottom: 20px;
-    width: 100%;
-    text-align: center;
-    margin-right: 10px;
-}
-
-.section-content{
-    text-align: center;
-    width: 50%;
-    padding-left: 25%
-
-}
-
-.container{
-    padding : 1%;
-    background-color: #f6f6f6;
-    height: 100%;
-}
 

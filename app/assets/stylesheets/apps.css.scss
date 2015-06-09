@@ -1,0 +1,12 @@
+// Place all the styles related to the apps controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.apps-image{
+  background-size: cover;
+  display: table;
+  position: relative;
+  background: url(beach_guitar.jpg) no-repeat center center;
+  height: 55%;
+  width: 100%;
+}
