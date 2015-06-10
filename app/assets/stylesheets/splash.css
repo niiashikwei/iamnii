@@ -1,11 +1,11 @@
 
 .splash-image{
-    background-size: cover;
+    background-size: 100% auto;
     display: table;
     position: relative;
     background: url(nii_chi_ball.jpg) no-repeat center center;
-    height: 55%;
     width: 100%;
+    height: 100%;
 }
 
 

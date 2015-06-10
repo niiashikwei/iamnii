@@ -23,6 +23,11 @@ html, body{
     font-size: 1.5em;
 }
 
+.image-container{
+    height: 65%;
+    width: 100%;
+}
+
 .site-title{
     float:left;
     /*padding-top: 5px;*/

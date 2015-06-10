@@ -3,10 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .apps-image{
-  background-size: cover;
+  background-size: 100% auto;
   display: table;
   position: relative;
-  background: url(beach_guitar.jpg) no-repeat center center;
-  height: 55%;
+  background: url(apps-image.jpg) no-repeat center center;
+  height: 70%;
   width: 100%;
 }
